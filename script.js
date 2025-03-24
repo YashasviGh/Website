@@ -15,18 +15,20 @@ const pageViewEvent = {
     'client_ip_address': '192.168.1.1',
   },
 };
-const addToCartEvent = {
-  'event_name': 'AddToCart',
-  'event_time': Date.now(),
-  'user_data': {
-    'client_user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
-    'client_ip_address': '192.168.1.1',
-  },
-  'custom_data': {
-    'currency': 'USD',
-    'value': 5.99,
-  },
-};
+const addToCartButton = document.getElementById('add-to-cart-button');
+addToCartButton.addEventListener('click', () => {
+  const addToCartEvent = {
+    'event_name': 'AddToCart',
+    'event_time': Date.now(),
+    'user_data': {
+      'client_user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+      'client_ip_address': '192.168.1.1',
+    },
+    'custom_data': {
+      'currency': 'USD',
+      'value': 5.99,
+    },
+  };
 const eventData = {
   'event_name': 'Purchase',
   'event_time': Date.now(),
