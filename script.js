@@ -22,7 +22,7 @@ const eventData = {
 
 // Set up API request headers
 const headers = {
-  'Authorization': `Bearer ${accessToken}`,
+  'Authorization': `Bearer ${EAACEdEose0cBO8OtPPdgeRkmFsI4h3VgrSahKni0EnsPwZBWJJ6w2qHjhUpzRZAXP2RkNAQRpUG4C657JpmYLJGIswfpM5vE4smVK91ZAnDHLiKhx8QDrouqfCZCXFQM63PWL3fXy3gelUpoiTz8pca0Wu40Cw5dNnzSHq7CNpZAJckZBgERP5tzxduwZCbzuQIT6EC5scaCVFYn3Tm928rWZC9ZCEl1miLaDG65x9ThkM3XmtnZB0X1Vm8uZBDbGruYcQLU2ZAH4y9k8vJJ}`,
   'Content-Type': 'application/json',
 };
 
