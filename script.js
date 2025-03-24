@@ -6,6 +6,25 @@ const pixelId = '1254725762274850';
 // Replace with your access token
 const accessToken = 'EAAMyE4ynYOIBO2fUML9YgUICMGr2u8sZByAg6RlqK0R6blEshtv9aZCgWcFCNFcaRXkm0ddTDtW9VFNhfWTiAMM3ZA2ucZCuDXAqouHgdCmWAk13o18ZBpU6Lce79DWEdQUCZBfa2ul6jLNpbQR8ALMA6XiirsBt6piV5ZAQ95gB2JMfrCo04EmTqwkqZAmO9AkySCAvm9ks9riNbZAZBen58ZD';
 
+function getClickId() {
+  const clickId = Cookies.get('fbc');
+  if (!clickId) {
+    const newClickId = uuidv4();
+    Cookies.set('fbc', newClickId);
+    return newClickId;
+  }
+  return clickId;
+}
+
+function getBrowserId() {
+  const browserId = Cookies.get('fbp');
+  if (!browserId) {
+    const newBrowserId = uuidv4();
+    Cookies.set('fbp', newBrowserId);
+    return newBrowserId;
+  }
+  return browserId;
+}
 // Event data
 const pageViewEvent = {
   'event_name': 'PageView',
