@@ -27,7 +27,7 @@ const headers = {
 };
 
 // Send event data to Meta's servers using CAPI
-axios.post(`https://graph.facebook.com/v13.0/${pixelId}/events`, eventData, { headers })
+axios.post(`https://graph.facebook.com/v13.0/${1254725762274850}/events`, eventData, { headers })
   .then(response => {
     console.log(response.data);
   })
