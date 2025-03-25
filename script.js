@@ -10,6 +10,8 @@ const accessToken = 'EAAG...'; // Correctly formatted access token
 
 fbq('track', 'ArticleId',{
   content_name:'Article A',
+  value: 99.99,
+  currency: 'USD'
 }
 
 function getClickId() {
