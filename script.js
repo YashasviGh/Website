@@ -8,6 +8,10 @@ const pixelId = '1254725762274850';
 // Replace with your access token
 const accessToken = 'EAAG...'; // Correctly formatted access token
 
+fbq('track', 'ArticleId',{
+  content_name:'Article A',
+}
+
 function getClickId() {
   const clickId = Cookies.get('fbc');
   if (!clickId) {
